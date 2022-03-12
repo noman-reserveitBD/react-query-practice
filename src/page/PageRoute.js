@@ -4,6 +4,7 @@ import Home from "./Home";
 import PostswithRQ from "./PostswithRQ";
 import About from "./PostWithRQ";
 import Users from "./Users";
+import PostDetails from "./postDetails.page";
 
 const PageRoute = () => {
   return (
@@ -13,6 +14,7 @@ const PageRoute = () => {
         <Route path="suprherosWithRQ" element={<About />} />
         <Route path="users" element={<Users />} />
         <Route path="postwithrq" element={<PostswithRQ />} />
+        <Route path="post-details/:postID" element={<PostDetails />} />
       </Routes>
     </>
   );
